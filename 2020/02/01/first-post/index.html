@@ -465,6 +465,32 @@ Header3123456class Person &amp;#123;    String name;    Int age;    Dou">
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'de83e943f1cf26a44846',
+        clientSecret: 'a80a2373890c9820c62409c2ec909a7ff48963d2',
+        repo: 'qudouwan.github.io',
+        owner: 'Qudouwan',
+        admin: "SongJiaqiang",
+        id: '2020-02-01T17-03-12',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
 
     
 
